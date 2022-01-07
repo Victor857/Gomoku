@@ -1,0 +1,141 @@
+body {
+    font: 16px sans-serif;
+    margin: 0px;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.navbar{
+    background: #fafafa;
+    border-top: 5px solid #FF8B28;
+    border-bottom: 1px solid grey;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 5vh;
+}   
+
+.navelem{
+    background: #fafafa;
+    border: 1px solid rgba(0,0,0,0);
+    height: 98%;
+    font-size: 1.2em;
+}
+
+.navelem:hover{
+    background: #DDD;
+}
+
+.navelem.title{
+    font-weight: bold;
+    font-size: 1.25em; 
+    margin-right: 2vw; 
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.posn {
+    background: rgba(0,0,0, 0);
+    border: 1px solid rgba(0,0,0,0);
+    float: left;
+    height: 6vmin;
+    width: 6vmin;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.posn.\32{
+    background-image: url('Pictures/whiteStone.png');
+}
+
+.posn.\30{
+    background-image: url('Pictures/blackStone.png');
+}
+
+.posn.player{
+    width:3vmin; 
+    height:3vmin;
+    
+}
+
+.posn:focus {
+    outline: none;
+}
+
+.kbd-navigation .posn:focus {
+    background: #ddd;
+}
+
+.game{
+    margin-left: calc(50vw - 45vmin);
+    margin-left: calc(50vw - 45vmin);
+}
+
+.status{
+    height: 4vh;
+    width: 90vmin;
+}
+
+.status p {
+    margin: auto;
+}
+
+#game-board {
+	height: 90vmin;
+	width: 90vmin;
+	background-image: url('Pictures/gomokuBoard.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.homePage, .History, .login, .signup{
+        width: 90vmin;
+        margin: auto;
+}
+
+.homePage h1{
+        font-size: 36px;
+}
+
+.homePage h3{
+        font-size: 24px;
+}
+
+.difficulty, .colour{
+    margin-bottom: 1vmin;
+}
+
+input{
+    margin-bottom: 3vmin;
+}
+
+button.submit{
+    margin-top: 2vmin;
+}
+
+/*
+.difficulty, .colour{
+    background-color: rgba(0,0,0,0);
+}
+
+.difficulty:hover, .colour:hover{
+    border-left-width: 5px;
+    border-right-width: 5px;
+}
+
+.Beginner{border-color: lightgreen}
+.Intermediate{border-color: gold}
+.Experienced{border-color: orange}
+.Advanced{border-color: red}
+.Ultimate{border-color: purple}
+
+.White{border-color:white}
+*/
